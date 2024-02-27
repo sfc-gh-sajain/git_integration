@@ -6,7 +6,7 @@ import json
 def hello(session: Session) -> DataFrame:
     df = session.table("sample_db.public.customers_sample")
     #df = df.groupBy("STATE").count()
-    df = df.filter("STATE" == "MS")
+    df = df.filter("STATE" == 'MS')
     return df
 
 # For local debugging
