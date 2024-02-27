@@ -11,5 +11,5 @@ def hello(session: Session) -> DataFrame:
 # For local debugging
 if __name__ == "__main__":
     session = Session.builder.configs(json.load(
-      open("/change_your_path/snowflake_connection.json"))).create()
-    print (hello (session).show())
+      open("snowflake_connection.json"))).create()
+    print (hello(session).show())
