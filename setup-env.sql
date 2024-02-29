@@ -1,9 +1,9 @@
 --!jinja2
 
 {% if DEPLOYMENT_TYPE == 'prod' %}
-  {% set environments = ['prod1', 'prod2'] %}
+  {% set environments = ['cert', 'prod'] %}
 {% else %}
-  {% set environments = ['dev', 'qa', 'staging'] %}
+  {% set environments = ['dev', 'btat'] %}
 {% endif %}
 
 {% for environment in environments %}
