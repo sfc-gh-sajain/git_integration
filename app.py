@@ -5,7 +5,7 @@ import json
 
 def hello(session: Session) -> DataFrame:
     df = session.table("sample_db.public.customers_sample")
-    df = df.filter(col("STATE") == 'NY')
+    #df = df.filter(col("STATE") == 'NY')
     return df
 
 # For local debugging
